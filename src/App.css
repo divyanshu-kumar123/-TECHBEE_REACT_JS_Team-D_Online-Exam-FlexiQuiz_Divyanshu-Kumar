@@ -1,39 +1,290 @@
 .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* css */
+  body{
+    background-image  : url("./components/images/bck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .h1{
+    font-size: 90px;
+    color: white;
+    user-select: none;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .center{
+    text-align: center;
+    word-wrap: initial;
+  }
+  .nav-item{
+    font-size: 15px;
+    padding: 0px 25px;
+  }
+  .h2{
+    font-size: 30px;
+    color: white;
+  }
+  .btn-lg{
+    width: 245px;
+      font-family: arial;
+      height: 50px;
+      border-radius: 17px;
+      font-size: 21px;
+  } 
+  .LoginInput{
+      border-radius: 8px;
+      border: 2px solid #dddfe2;
+      outline: none;
+      color: #1d2129;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.75rem;
+      width: 90%;
+      font-size: 1rem;
+      padding-right: 20px;
+    }
+  .LoginInput:hover{
+    box-shadow: black;
+    background-color: #dee5f5;
+  }
+  
+  .button{
+    width: 36em;
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "copperplat ghothic";
+    text-align: center;
+    width: 500px;
+  }
+  .button:hover{
+    background: #123563;
+    font-weight: 700;
+  }
+  .buttons{
+    padding: 24px 20px;
+    justify-content: end;
+    /* display: contents; */
+  }
+  .buttonsMain{
+    padding: 24px 20px;
+    justify-content: end;
+    display: contents;
+    padding-left: 20px;
+  }
+  .loginBody{
+    border: 1px solid white;
+    padding: 30px 30px 30px 30px;
+    /* width: 50em; */
+  }
+  .loginBodyi{
+    border: 1px solid white;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    font-size: 30px;
+    background-color: #55787c;
+    /* width: 50em; */
+  }
+  :placeholder-shown{
+    text-align: center; 
+    font-size: 12px;
+    color: black;
+  }
+  .or{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+  .bottom{
+    padding-top: 25em;
+  }
+  .black{
+    color: black;
+    font-size: 35px;
+  }
+  .widen{
+    width:69%;
+  }
+  .info{
+    text-align: left;
+  }
+  .info_list{
+    width: 60em;
+    height: 30em ;
+  }
+  .span{
+    font-size: 25px;
+
+  }
+  .qbody{
+    text-align: left;
+    padding: 25px 15px 25px 25px; 
+  }
+  .option{
+  align-items: flex-start ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color:white
+  }
+  .question{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+
+/* Aboutus */
+
+  .aboutback{
+    /* background-color: black; */
+    color: pink ;
+    /* border: 5px inset rgb(230, 54, 54); */
+    font-size: 19px;
+    text-align: center; 
+    color: white;
+    }
+  .aboutus{
+    padding-left: 0px;
+    font-size: large;
+  }
+
+/* .question */
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.question-text {
+  margin-bottom: 12px;
+  color: aliceblue;
+  font-size: 39px;
+
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  
+}
+
+.buttonspec {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0dcaf0;
+
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 5px solid #234668;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.correct {
+  background-color: #2f922f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incorrect {
+  background-color: #ff3333;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+.instruction{
+  font-size: 20px;
+  padding-left: 28px;
+}
+
+/* examinstruction */
+.exambutton{
+  width: 13em;
+  height:50px;
+  margin-left: 75em;
 }
