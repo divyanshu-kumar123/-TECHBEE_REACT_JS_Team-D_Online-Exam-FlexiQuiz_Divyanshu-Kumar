@@ -37,18 +37,25 @@
     }
   }
   /* css */
-  body{
+  /* body{
     background-image  : url("./components/images/bck.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
+  } */
+  .start-5 {
+    left: 27%!important;
+}
+  body {
+    background: url("./components/images/bg-masthead.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .h1{
-    font-size: 90px;
     color: white;
     user-select: none;
-    text-align: center;
-    text-decoration: underline;
+ 
   }
   .center{
     text-align: center;
@@ -62,6 +69,13 @@
     font-size: 30px;
     color: white;
   }
+  .bol{
+    font-size: 30px;
+    font-family: emoji;
+    color: rgb(250 255 255);
+    font-weight: 900;
+   
+  }
   .btn-lg{
     width: 245px;
       font-family: arial;
@@ -70,36 +84,19 @@
       font-size: 21px;
   } 
   .LoginInput{
-      border-radius: 8px;
-      border: 2px solid #dddfe2;
-      outline: none;
-      color: #1d2129;
-      margin: 0.5rem 0;
-      padding: 0.5rem 0.75rem;
-      width: 90%;
-      font-size: 1rem;
-      padding-right: 20px;
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
     }
   .LoginInput:hover{
     box-shadow: black;
     background-color: #dee5f5;
   }
   
-  .button{
-    width: 36em;
-    background: #1877f2;
+  .divbutton{
     border: 1px solid #1877f2;
     color: #fff;
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
     border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-    font-size: 15px;
-    font-family: "copperplat ghothic";
     text-align: center;
-    width: 500px;
   }
   .button:hover{
     background: #123563;
@@ -121,6 +118,14 @@
     padding: 30px 30px 30px 30px;
     /* width: 50em; */
   }
+  .loginBody1{
+    border: 1px solid white;
+    padding: 30px 30px 30px 30px;
+    width: 50em;
+  }
+  .start{
+    left: 44%;
+  }
   .loginBodyi{
     border: 1px solid white;
     padding: 5px 5px 5px 5px;
@@ -134,10 +139,14 @@
     font-size: 12px;
     color: black;
   }
+  .about-text{
+    padding-left: 15px;
+    padding-right: 50px;
+  }
   .or{
     font-size: 20px;
     font-weight: 700;
-    color: white;
+    color: black;
     text-align: center;
   }
   .bottom{
@@ -176,15 +185,24 @@
     font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-
-
+.user{
+  width: 25px;
+  height: 25px;
+}
+.wdth{
+  width: 88px;
+}
+.icons{
+  display: flex;
+  padding-bottom: 13em;
+ 
+}
 
 /* Aboutus */
 
   .aboutback{
-    /* background-color: black; */
+    background-color: #0f99c8;
     color: pink ;
-    /* border: 5px inset rgb(230, 54, 54); */
     font-size: 19px;
     text-align: center; 
     color: white;
@@ -197,8 +215,10 @@
 /* .question */
 .score-section {
   display: flex;
-  font-size: 24px;
+  font-size: 23px;
   align-items: center;
+  color: black;
+  background-color: #55787c;
 }
 
 /* QUESTION/TIMER/LEFT SECTION */
@@ -214,6 +234,9 @@
 .question-count span {
   font-size: 35px;
   font-weight: 700;
+}
+.nav{
+  color:white;
 }
 
 .question-text {
@@ -286,5 +309,181 @@ button svg {
 .exambutton{
   width: 13em;
   height:50px;
-  margin-left: 75em;
+  margin-left: 2em;
+}
+
+/* contact */
+
+  .scontact{
+  padding: 4%;
+  height: 400px;
+  }
+  .col-md-3{
+  background: #778899;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  }
+  .contact-info{
+  margin-top:10%;
+  }
+  .contact-info img{
+  margin-bottom: 15%;
+  }
+  .contact-info h2{
+  margin-bottom: 10%;
+  }
+  .col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-bottom: 2pc;
+  }
+  .contact-form label{
+  font-weight:600;
+  }
+  .contact-form button{
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+  }
+  .contact-form button:focus{
+  box-shadow:none;
+  }#img1 {
+  width: 14pc;
+  padding-right: 3pc;
+  }
+  h2,h4 { 
+      color:  solid black;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 68px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #d6169d;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+
+
+  /* //////// */
+
+
+  .wrapper {
+    max-width: 400px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    width: 50em;
+}
+
+.logo {
+    width: 80px;
+    margin: auto
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7, -8px -8px 15px #fff
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff
+}
+
+.wrapper .form-field .fas {
+    color: #555
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+    letter-spacing: 1.3px
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4
+}
+
+.wrapper a:hover {
+    color: #039BE5
+}
+.masthead{
+  padding-top: 23em;
+    padding-bottom: 42em;
+    background: url("./components/images/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-top: -50px;
+}
+.sider{
+  width: 80%;
+  text-align: justify;
+  display: flex;
 }

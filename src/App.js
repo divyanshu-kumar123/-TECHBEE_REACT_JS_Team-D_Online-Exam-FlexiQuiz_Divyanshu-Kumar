@@ -5,16 +5,16 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Body from './components/Body';
 import InstructionHtml from './components/InstructionHtml';
-import Aboutus from './components/Aboutus'; 
-import Reports from './components/Reports';
 import Htmlexam from './components/Htmlexam';
 import Cssexam from './components/Cssexam';
 import Javascriptexam from './components/Javascriptexam';
-import Mathreasoningexam from './components/Mathreasoningexam';
+import Nodejs from './components/Nodejs';
 import Register from './components/Register';
 import Alert from './components/Alert';
 import Instructioncss from './components/Instructioncss'
 import Instructionjs from './components/Instructionjs'
+import Contactus from './components/Contactus';
+import Instructionnode from './components/Instructionnode';
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -30,17 +30,11 @@ function App() {
   return (
     <div>
   <Router>
-    <Navbar/>
+    <Navbar showAlert={showAlert}/>
     <Alert alert={alert}/>
       <Switch>
-        <Route exact path="/aboutus">
-        <Aboutus/>
-        </Route>
         <Route exact path="/">
           <Body showAlert={showAlert}/>
-        </Route>
-        <Route exact path="/report">
-        <Reports/>
         </Route>
         <Route exact path="/instructionHtml">
        <InstructionHtml />
@@ -60,8 +54,14 @@ function App() {
         <Route exact path="/javascriptexam">
        <Javascriptexam/>
         </Route>
-        <Route exact path="/mathreasoningexam">
-      <Mathreasoningexam/>
+        <Route exact path="/nodejs">
+      <Nodejs/>
+        </Route>
+        <Route exact path="/instructionnode">
+      <Instructionnode/>
+        </Route>
+        <Route exact path="/contact">
+        <Contactus />
         </Route>
         <Route exact path="/login">
           <Login showAlert={showAlert}/>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export default function Javascriptexam() {
 	const questions = [
@@ -139,7 +140,7 @@ export default function Javascriptexam() {
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
-	const handleAnswerOptionClick = (isCorrect) => {
+	const handleAnswerOptionClick = async (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
 		}
@@ -148,16 +149,51 @@ export default function Javascriptexam() {
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
-			setShowScore(true);
+            try {
+                const config = {
+                    method: 'post',
+                    url: 'http://localhost:5000/api/marks/addmarks',
+                    headers: {
+                    'User-Agent': 'Axios - console app',
+                    'Content-Type': ' application/json',
+                    'auth-token': localStorage.getItem('token')
+                },
+                data: {
+                    "name" : "Javascript",
+                    "marks": score
+                    
+                }
+                }
+            let res = await axios(config)
+            console.log(res);
+            // if ()
+            if(res.status===200){
+                setShowScore(true);  //score
+            }
+        } catch (error) {
+            console.log(error);
+            console.log(error.response.data)
+            {alert(error.response.data.error)}
+        }
 		}
 	};
 	return (
         <div className="position-absolute top-50 start-50 translate-middle">
 			<h1 className="h1 center">JavaScript Quiz</h1>
 			{showScore ? (
-				<div className='score-section'>
-					You scored {score} out of {questions.length}
-				</div>
+				 <div className="score-section loginBody ">
+				 Congratulation!!! <br />
+				 You Have Successfully completed your quiz on our Exam Site FlexiQuiz. 
+				 <br/>You have scored {score} out of {questions.length} . 
+				 <br/>
+				 <br/>
+				 We are very gratefull to you that you have chosen our site for the quiz.
+				 <br />
+				 Thank you!!!
+				 <br/>
+				 Have A Nice Day
+	 
+			   </div>
 			) : (
 				<>
 					<div className='question-section'>

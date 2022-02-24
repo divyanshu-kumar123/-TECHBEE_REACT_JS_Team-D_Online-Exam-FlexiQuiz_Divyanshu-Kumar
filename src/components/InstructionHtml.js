@@ -17,7 +17,7 @@ function Instruction() {
         <div className="nfo loginBodyi">5. You can't exit from the quiz while playing</div>
         <div className="info loginBodyi">6. You will get points on the basis of correct answer</div>
       </div>
-      <button className="exambutton btn btn-primary" onClick={()=>{history.push("/htmlexam")}}>Start test</button>
+      <button className="exambutton btn btn-light" onClick={()=>{history.push("/htmlexam")}}>Start test</button>
       </div>
     </div>
   )
